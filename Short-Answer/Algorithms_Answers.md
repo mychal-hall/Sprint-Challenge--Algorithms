@@ -33,8 +33,12 @@ c)  def bunnyEars(bunnies):
 ```
 
 c) O(n)
-    It's a recursive function.
+    It's a single loop recursive function.
 
 ## Exercise II
 
+    We could try a binary search. Take the n-story total and check the middle element (n), drop an egg. IF the egg breaks we could drop RHS and just be left with the lower half. 
+    Then grab the middle element of the remaining floors and drop an egg. IF the egg breaks we could drop RHS and just be left with the lower half. 
 
+    Eventually we would find the right floor... \
+    Best case we could run at O(1). Worst case I think we end up at O(log n)
